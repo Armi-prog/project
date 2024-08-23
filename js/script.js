@@ -12,7 +12,13 @@
 
 5) Добавить нумерацию выведенных фильмов */
 
-'use strict';
+"use strict";
+
+const adv = document.querySelectorAll(".promo__adv img");
+const genre = document.querySelector(".promo__genre");
+
+adv.forEach(item => item.remove());
+genre.textContent = "Драма";
 
 const movieDB = {
     movies: [
